@@ -1,10 +1,15 @@
 import { FaTimes } from 'react-icons/fa';
+import styles from './Task.module.css';
+
 const Task = ({ task, onDelete, onToggle }) => {
   return (
-    <div className={`task ${task.reminder ? 'task__border' : ''}`} onDoubleClick={() => onToggle(task.id)}>
-      <div className='task__text'>
+    <div
+      className={`${styles.task} ${task.reminder ? `${styles.task__border}` : ''}`}
+      onDoubleClick={() => onToggle(task.id)}
+    >
+      <div className={styles.task__text}>
         {task.text}
-        <div className='task__close'>
+        <div className={styles.task__close}>
           <FaTimes
             onClick={() => onDelete(task.id)}
             style={{
@@ -14,7 +19,7 @@ const Task = ({ task, onDelete, onToggle }) => {
           />
         </div>
       </div>
-      <div className='task__date'>{task.date}</div>
+      <div className={styles.task__date}>{task.date}</div>
     </div>
   );
 };

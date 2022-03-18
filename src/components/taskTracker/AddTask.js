@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './AddTask.module.css';
 
 const AddTask = ({ addTask }) => {
   const [text, setText] = useState('');
@@ -17,11 +18,12 @@ const AddTask = ({ addTask }) => {
     setReminder(false);
   };
   return (
-    <div className='add__task'>
-      <form action='' className='add__form' onSubmit={onSubmit}>
-        <div className='form__control'>
+    <div className={styles.add__task}>
+      <form action='' className={styles.add__form} onSubmit={onSubmit}>
+        <div className={styles.form__control}>
           <label htmlFor='newTask'>New task</label>
           <input
+            className={styles.input}
             id='newTask'
             type='text'
             placeholder='enter a task'
@@ -29,9 +31,10 @@ const AddTask = ({ addTask }) => {
             onChange={(e) => setText(e.target.value)}
           />
         </div>
-        <div className='form__control'>
+        <div className={styles.form__control}>
           <label htmlFor='newTaskDate'>Date</label>
           <input
+            className={styles.input}
             id='newTaskDate'
             type='text'
             placeholder='enter date and time'
@@ -39,16 +42,17 @@ const AddTask = ({ addTask }) => {
             onChange={(e) => setDate(e.target.value)}
           />
         </div>
-        <div className='form__control form__check'>
-          <label htmlFor='newTaskReminder'>Set a reminder</label>
+        <div className={`${styles.form__control} ${styles.form__check}`}>
           <input
+            className={styles.input}
             id='newTaskReminder'
             type='checkbox'
             value={reminder}
             onChange={(e) => setReminder(e.currentTarget.checked)}
           />
+          <label htmlFor='newTaskReminder'>Set a reminder</label>
         </div>
-        <input className='btn btn__form' type='submit' value='Save task' />
+        <input className={`btn ${styles.btn__form}`} type='submit' value='Save task' />
       </form>
     </div>
   );

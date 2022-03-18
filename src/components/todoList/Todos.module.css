@@ -1,0 +1,11 @@
+.inputBLock {
+  text-align: center;
+}
+
+.input {
+  border-bottom: 2px solid var(--color);
+  text-align: center;
+  margin: 0 15px;
+  width: 50%;
+  padding: 10px;
+}

@@ -1,0 +1,29 @@
+.task {
+  max-height: 80px;
+  background-color: rgb(237, 255, 216);
+  margin: 3px;
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 17px;
+  border-left: 4px solid transparent;
+}
+.task__close {
+  transition: all 0.2s;
+}
+.task__close:hover {
+  background-color: rgb(197, 255, 132);
+  border-radius: 5px;
+  height: 20px;
+}
+.task__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task__date {
+  font-size: 15px;
+}
+
+.task__border {
+  border-left: 4px solid rgb(71, 133, 0);
+}

@@ -18,5 +18,27 @@
       "reminder": false,
       "id": 5
     }
+  ],
+  "todos": [
+    {
+      "text": "Laundry",
+      "isChecked": true,
+      "id": 1
+    },
+    {
+      "text": "Groceries",
+      "isChecked": true,
+      "id": 2
+    },
+    {
+      "text": "Clean",
+      "isChecked": true,
+      "id": 3
+    },
+    {
+      "text": "ghghghhgh",
+      "isChecked": true,
+      "id": 4
+    }
   ]
 }
