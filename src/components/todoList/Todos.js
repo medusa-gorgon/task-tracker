@@ -25,11 +25,9 @@ const Todos = ({ todos, addTodo, deleteTask, toggleChecked }) => {
             value={text}
             onChange={(e) => {
               setText(e.target.value);
-              console.log(e.target.value);
             }}
           />
           <button className={`${styles.btn} btn`}>Add</button>
-          {/* <input type='submit' value='Add' className='btn' /> */}
         </form>
       </div>
       <div className={styles.todos}>

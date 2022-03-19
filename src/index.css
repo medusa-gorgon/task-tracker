@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--black);
   color: var(--light);
-  --black: #272822; /* #272822 */
+  --black: #181815; /* #272822 */
   --white: #f8f0ff;
   --primary: #7f98c1; /* #04a700 */
   --light: #b7c5ea; /* #41ff51  #b7c5ea*/
@@ -14,7 +14,6 @@ body {
   --darkGrey: #5b5b5b; /* #5b5b5b */
   --grey: #bdbdbd;
   --hover: #333333;
-  /*  */
 }
 
 code {
