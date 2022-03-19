@@ -10,13 +10,13 @@ const Task = ({ task, onDelete, onToggle }) => {
       <div className={styles.task__text}>
         {task.text}
         <div className={styles.task__close}>
-          <FaTimes
+          <div
+            className='delete'
             onClick={() => onDelete(task.id)}
             style={{
               color: 'red',
-              cursor: 'pointer',
             }}
-          />
+          ></div>
         </div>
       </div>
       <div className={styles.task__date}>{task.date}</div>

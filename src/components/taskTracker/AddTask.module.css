@@ -7,9 +7,10 @@
 }
 
 .input {
-  border: 2px solid grey;
+  border: 2px solid var(--grey);
   border-radius: 5px;
   padding: 10px;
+  color: var(--light);
 }
 
 .form__control {
@@ -24,7 +25,7 @@
 }
 
 .btn__form {
-  background-color: rgb(0, 90, 8);
+  background-color: var(--primary);
   width: 100%;
   margin-bottom: 10px;
 }

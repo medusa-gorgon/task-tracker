@@ -19,7 +19,7 @@ const Todo = ({ todo, deleteTask, toggleChecked }) => {
         </label>
       </form>
       <span
-        className={styles.delete}
+        className={`delete ${styles.delete}`}
         // className={todo.isChecked ? `${styles.delete} ${styles.checked}` : `${styles.delete}`}
         onClick={() => {
           deleteTask(todo.id);

@@ -32,9 +32,11 @@ const Todos = ({ todos, addTodo, deleteTask, toggleChecked }) => {
           {/* <input type='submit' value='Add' className='btn' /> */}
         </form>
       </div>
-      {todos.map((todo) => (
-        <Todo todo={todo} key={todo.id} deleteTask={deleteTask} toggleChecked={toggleChecked} />
-      ))}
+      <div className={styles.todos}>
+        {todos.map((todo) => (
+          <Todo todo={todo} key={todo.id} deleteTask={deleteTask} toggleChecked={toggleChecked} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -7,38 +7,27 @@
       "reminder": true
     },
     {
-      "text": "Task",
-      "date": "Date",
-      "reminder": true,
-      "id": 4
-    },
-    {
       "text": "Doctors appointment",
       "date": "March 21th at 13:00",
-      "reminder": false,
+      "reminder": true,
       "id": 5
     }
   ],
   "todos": [
     {
       "text": "Laundry",
-      "isChecked": true,
+      "isChecked": false,
       "id": 1
     },
     {
       "text": "Groceries",
-      "isChecked": true,
+      "isChecked": false,
       "id": 2
     },
     {
       "text": "Clean",
-      "isChecked": true,
+      "isChecked": false,
       "id": 3
-    },
-    {
-      "text": "ghghghhgh",
-      "isChecked": true,
-      "id": 4
     }
   ]
 }
